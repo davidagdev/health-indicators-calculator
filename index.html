@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC </title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"></style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="Genero">Género:</label>
+            <select name="Genero" id="Genero">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select>
+            <label for="Edad">Edad:</label>
+            <input type="number" name="Edad" id="Edad" placeholder="30">
+        </fieldset>
+        <fieldset>
+            <legend>Frecuencia Cardíaca (FC)</legend>
+            <label for="FCb">Frecuencia Cardíaca Basal (FCb):</label>
+            <input type="number" name="FCb" id="FCb" placeholder="60">
+            <fieldset>
+                <legend>Frecuencia Cardíaca Máxima (FCmax)</legend>
+                <button type="button">Calcular</button>
+            </fieldset>
+            <fieldset>
+                <legend>Frecuencia Cardíaca Entrenamiento</legend>
+                <button type="button">Calcular</button>
+                <output id="Aero_Regenerativo"></output>
+                <output id="Aero_Lipolítico"></output>
+                <output id="Aero_Glucolítico"></output>
+                <output id="Mixto extensivo"></output>
+                <output id="Mixto intensivo"></output>
+                <output id="Anae_Lact_Extensivo"></output>
+                <output id="Anae_Lact_Intensivo"></output>
+                <output id="Anae_Alac__Extensivo"></output>
+                <output id="Anae_Alac__Intensivo"></output>
+                <output id="Neural"></output>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Tensión Arterial (TA)</legend>
+            <fieldset>
+                <legend>Sistólica(S)</legend>
+                <label for="Sistolica">(en milímetros de mercurio o mmHg):</label>
+                <input type="number" name="Peso" id="Sistolica" step="any" placeholder="66.8">
+                <output id="resultadoTAS"></output>
+            </fieldset>
+            <fieldset>
+                <legend>Diastólica(D)</legend>
+                <label for="Diastolica">(en milímetros de mercurio o mmHg):</label>
+                <input type="number" name="Peso" id="Diastolica" step="any" placeholder="66.8">
+                <output id="resultadoTAD"></output>
+            </fieldset>
+            <button type="button" id="CalculaTA"> Calcular TA</button>
+        </fieldset>
+        <fieldset>
+            <legend>Indice de Masa Corporal (IMC)</legend>
+            <label for="Peso">Peso (en kilogramos):</label>
+            <input type="number" name="Peso" id="Peso" step="any" placeholder="66.8">
+            <label for="Altura">Altura (en metros):</label>
+            <input type="number" name="Altura" id="Altura" step="any" placeholder="1.80">
+            <button type="button" id="CalculaIMC"> Calcular IMC</button>
+            <output id="resultadoIMC"></output>
+        </fieldset>
+        <fieldset>
+            <legend>Índice Cintura-Cadera (ICC)</legend>
+            <label for="Cintura">Perímetor cíntura (en centímetros):</label>
+            <input type="number" name="Cintura" id="Cintura" step="any" placeholder="60.0">
+            <label for="Cadera">Perímetro cadera (en centímetros):</label>
+            <input type="number" name="Cadera" id="Cadera" step="any" placeholder="60.0">
+            <button type="button" id="CalculaICC">Calcula ICC</button>
+            <output id="resultadoICC"></output>
+        </fieldset>
+        <button type="button" id="reset">Limpiar datos</button>
+    </form>
+</body>
+</html>
